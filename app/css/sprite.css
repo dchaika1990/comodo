@@ -1,0 +1,96 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-G+_button {
+  background-image: url(sprite.png);
+  background-position: -118px 0px;
+  width: 35px;
+  height: 35px;
+}
+.icon-Youtube {
+  background-image: url(sprite.png);
+  background-position: -118px -35px;
+  width: 35px;
+  height: 35px;
+}
+.icon-amex {
+  background-image: url(sprite.png);
+  background-position: 0px -126px;
+  width: 28px;
+  height: 20px;
+}
+.icon-bitc {
+  background-image: url(sprite.png);
+  background-position: -87px -75px;
+  width: 28px;
+  height: 20px;
+}
+.icon-comodo {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 118px;
+  height: 40px;
+}
+.icon-facebook_button {
+  background-image: url(sprite.png);
+  background-position: -59px -40px;
+  width: 35px;
+  height: 35px;
+}
+.icon-fb-mobile {
+  background-image: url(sprite.png);
+  background-position: -33px -95px;
+  width: 32px;
+  height: 31px;
+}
+.icon-google-mobile {
+  background-image: url(sprite.png);
+  background-position: 0px -95px;
+  width: 33px;
+  height: 31px;
+}
+.icon-isracard {
+  background-image: url(sprite.png);
+  background-position: -118px -70px;
+  width: 30px;
+  height: 22px;
+}
+.icon-master {
+  background-image: url(sprite.png);
+  background-position: -59px -75px;
+  width: 28px;
+  height: 20px;
+}
+.icon-subscribe_little_bird {
+  background-image: url(sprite.png);
+  background-position: 0px -40px;
+  width: 59px;
+  height: 55px;
+}
+.icon-visa {
+  background-image: url(sprite.png);
+  background-position: -96px -95px;
+  width: 30px;
+  height: 22px;
+}
+.icon-yt-mobile {
+  background-image: url(sprite.png);
+  background-position: -65px -95px;
+  width: 31px;
+  height: 31px;
+}

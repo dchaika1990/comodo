@@ -1,0 +1,58 @@
+/*RESET START*/
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  color: #2c2c2c;
+  font-family: 'Noto Sans Hebrew';
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: #fff;
+
+  .ltr{
+    font-family: "Arial", sans-serif;
+  }
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: underline;
+  transition: color .3s linear;
+
+  &:hover{
+    //color: #2196f3;
+  }
+}
+img{
+  max-width: 100%;
+}
+input,
+textarea,
+button{
+  outline: none;
+  border: none;
+}
+input[type="submit"]{
+  cursor: pointer;
+}
+textarea{
+  resize: vertical;
+}
+button{
+  cursor: pointer;
+}
+label{
+  margin-bottom: 0;
+}
+
+/*RESET END*/

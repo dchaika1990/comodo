@@ -1,0 +1,42 @@
+.container{
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.btn{
+  padding: 13px 45px;
+  font-size: 18px;
+  background-color: transparent;
+
+  &.btn-primary{
+    border-radius: 25px 0 0 25px;
+    background-color: rgba(240,79,87,015);
+    color: #fff;
+  }
+}
+
+@media (max-width: 620px) {
+  .btn{
+    padding: 15px 45px;
+  }
+}
+
+.form-control{
+  padding: 13px 25px;
+  background-color: transparent;
+  border:1px solid #cccccc;
+  font-size: 15px;
+  letter-spacing:0.4px;
+  line-height:24px;
+  text-align:right;
+  color:#848484;
+}
+
+.ltr .form-control{
+  text-align: left;
+}
