@@ -10,7 +10,6 @@ var gulp         = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
     spritesmith = require('gulp.spritesmith'), // Подключение библиотеки для создания спрайтов
     sass = require('gulp-sass'),
-    sass_rtl = require('gulp-sass'),
     merge = require('merge-stream');
 
 gulp.task('css', function(){ // Создаем таск Sass
@@ -26,13 +25,6 @@ gulp.task('sass', function () {
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('app/css'))
 }) ;
-
-// gulp.task('sass_rtl', function () {
-//     gulp.src('src/scss/style-rtl.scss')
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-//         .pipe(gulp.dest('app/css'))
-// }) ;
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
@@ -74,9 +66,7 @@ gulp.task('css-libs', ['css'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite', 'sass'], function() {
-    // gulp.watch('src/css/**/*.css', ['css']); // Наблюдение за css файлами в папке css
     gulp.watch('src/scss/**/*.scss', ['sass']);
-    // gulp.watch('src/scss/style-rtl.scss', ['sass_rtl']);
     gulp.watch('src/sprite/*.png', ['sprite']); // Наблюдение за папкой с картинками для спрайтов  папке sprite
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('src/js/**/*.js', ['scripts']);   // Наблюдение за JS файлами в папке js

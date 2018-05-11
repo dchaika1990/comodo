@@ -3,43 +3,6 @@
 .footer{
   padding: 18px 0;
 
-  &.ltr{
-    .soc-btn{
-      justify-content: flex-end;
-    }
-
-    .footer-question{
-      & input:first-child{
-        border-radius: 25px 0 0 25px;
-      }
-
-      & input:last-child{
-        border-radius: 0 25px 25px 0;
-      }
-
-      & input + input{
-        margin-right: 10px;
-      }
-    }
-
-    .copyright{
-      .copyright-logo{
-        order: 3;
-        margin-left: auto;
-      }
-
-      .copyright-cards{
-        order: 2;
-      }
-
-      .copyright-text{
-        order: 1;
-        margin-left: 0;
-        text-align: left;
-      }
-    }
-  }
-
   & .soc-btn{
     justify-content: flex-start;
 
@@ -154,27 +117,6 @@
 
   @media (max-width: 650px){
     .footer-question{
-      input[type='submit']{
-        line-height: 24px;
-      }
-    }
-  }
-
-  &.ltr .footer-question{
-    input[type='text']{
-      order: 1;
-      border-radius: 25px 0 0 25px;
-    }
-
-    input[type='submit']{
-      order: 2;
-      border-radius: 0 25px 25px 0;
-    }
-  }
-
-  @media (max-width: 650px){
-    & .footer-question,
-    &.ltr .footer-question{
       margin-top: 18px;
 
       input[type='text'],
@@ -192,6 +134,7 @@
       input[type='submit']{
         order: 2;
         margin-top: 15px;
+        line-height: 24px;
       }
     }
   }
@@ -239,7 +182,6 @@
     flex-wrap: wrap;
     justify-content: center;
     font-size: 12px;
-    //margin-top: 19px;
 
     a{
       margin-top: 15px;
@@ -273,10 +215,6 @@
       a:first-child{
         display: none;
       }
-    }
-
-    &.ltr .footer-small-links{
-      text-align: left;
     }
   }
 
@@ -358,31 +296,11 @@
         line-height: 21px;
         letter-spacing: 0.5px;
       }
-
-
-
-    }
-  }
-
-  &.ltr{
-    .footer-bottom{
-      .copyright{
-        .copyright-text{
-          margin-right: auto;
-          margin-left: 0;
-          text-align: left;
-        }
-
-        .copyright-logo{
-          margin-left: 50px;
-        }
-      }
     }
   }
 
   @media (max-width: 800px){
-    & .footer-bottom .copyright,
-    &.ltr .footer-bottom .copyright{
+    & .footer-bottom .copyright{
       justify-content: space-between;
       padding-top: 16px;
 
@@ -399,18 +317,6 @@
         margin-top: 18px;
         line-height: 18px;
         order: 3;
-      }
-    }
-
-    &.ltr .copyright{
-      .soc-btn.mobile{
-        order: 2;
-        margin-left: auto;
-      }
-
-      .copyright-cards{
-        order: 1;
-        margin-left: 0;
       }
     }
   }
@@ -440,16 +346,6 @@
         }
       }
 
-    }
-
-    &.ltr .copyright{
-      .soc-btn.mobile{
-        margin-right: -2px;
-      }
-
-      .copyright-cards{
-        margin-left: -2px;
-      }
     }
   }
 }
