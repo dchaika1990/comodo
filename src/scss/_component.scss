@@ -20,9 +20,9 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .btn{
-    padding: 15px 45px;
+    padding: 12px 45px;
   }
 }
 
@@ -39,4 +39,10 @@
 
 .ltr .form-control{
   text-align: left;
+}
+
+@media (max-width: 650px) {
+  .form-control{
+    padding: 9px 25px;
+  }
 }

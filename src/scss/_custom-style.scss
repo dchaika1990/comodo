@@ -75,11 +75,11 @@
     }
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 650px) {
     & .soc-btn{
 
       & a + a{
-        margin-left: 6px;
+        margin-left: 8px;
       }
 
       .google{
@@ -262,7 +262,7 @@
     margin-top: 36px;
     border-top: 1px solid #dadada;
     padding-top: 15px;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
 
     a{
       display: inline-block;
@@ -399,7 +399,7 @@
         margin-right: -3px;
 
         a + a{
-          margin-left: 3px;
+          margin-left: 4px;
         }
       }
     }
