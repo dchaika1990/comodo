@@ -1,7 +1,7 @@
 //Footer
 
 .footer{
-  padding: 20px 0;
+  padding: 18px 0;
 
   &.ltr{
     .soc-btn{
@@ -104,7 +104,7 @@
 
   .footer-text{
     justify-content: center;
-    margin-top: -10px;
+    margin-top: -8px;
 
     p{
       max-width: 500px;
@@ -120,6 +120,12 @@
       p{
         font-size: 15px;
       }
+    }
+  }
+
+  @media (max-width: 650px) {
+    .footer-text{
+      margin-top: -1px;
     }
   }
 
@@ -144,6 +150,14 @@
       width:378px;
     }
 
+  }
+
+  @media (max-width: 650px){
+    .footer-question{
+      input[type='submit']{
+        line-height: 24px;
+      }
+    }
   }
 
   &.ltr .footer-question{
@@ -185,9 +199,9 @@
   .footer-big-links{
     flex-wrap: wrap;
     justify-content: center;
-    font-size:14px;
+    font-size:15px;
     color:#2196f3;
-    margin-top: 25px;
+    margin-top: 24px;
 
     a{
       margin-top: 15px;
@@ -200,14 +214,18 @@
 
   @media (max-width: 650px) {
     .footer-big-links{
-      justify-content: space-around;
+      justify-content: space-between;
 
       a{
-        padding: 0 18px;
+        margin-top: 17px;
+        width: 25%;
+        text-align: center;
 
         &:first-child,
         &:nth-child(2){
           order: 2;
+          width: 50%;
+
         }
       }
 
@@ -221,6 +239,7 @@
     flex-wrap: wrap;
     justify-content: center;
     font-size: 12px;
+    //margin-top: 19px;
 
     a{
       margin-top: 15px;
@@ -233,8 +252,8 @@
 
   @media (max-width: 650px) {
     .footer-small-links{
-      margin-top: 35px;
-      flex-direction: column;
+      margin-top: 39px;
+      flex-direction: column-reverse;
       text-align: right;
       border-top: 1px solid #b0b0b0;
       margin-left: -20px;
@@ -244,11 +263,15 @@
         margin-top: 0;
         border-bottom: 1px solid #b0b0b0;
         background-color: #ececec;
-        padding: 9px 18px;
+        padding: 8px 18px;
       }
 
       a + a {
         margin-left: 0;
+      }
+
+      a:first-child{
+        display: none;
       }
     }
 
@@ -263,7 +286,7 @@
 
     .copyright{
       flex-wrap: wrap;
-      padding-top: 15px;
+      padding-top: 14px;
 
       a{
         display: inline-block;
@@ -275,6 +298,7 @@
 
       .copyright-logo{
         display: block;
+        margin-left: -3px;
 
         a{
           background-image: url(../img/sprite.png);
@@ -286,7 +310,7 @@
 
       .copyright-cards{
         align-items: center;
-        margin-left: 50px;
+        margin-left: 43px;
 
         a + a{
           margin-left: 5px;
@@ -331,6 +355,8 @@
       .copyright-text{
         margin-left: auto;
         text-align: right;
+        line-height: 21px;
+        letter-spacing: 0.5px;
       }
 
 
@@ -358,6 +384,7 @@
     & .footer-bottom .copyright,
     &.ltr .footer-bottom .copyright{
       justify-content: space-between;
+      padding-top: 16px;
 
       .soc-btn.mobile{
         display: flex;
@@ -369,7 +396,8 @@
 
       .copyright-text{
         width: 100%;
-        margin-top: 20px;
+        margin-top: 18px;
+        line-height: 18px;
         order: 3;
       }
     }
@@ -395,6 +423,7 @@
       & .copyright{
         .copyright-text{
           font-size: 10px;
+          letter-spacing: 0.2px;
         }
 
         .soc-btn.mobile{

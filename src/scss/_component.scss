@@ -1,7 +1,13 @@
 .container{
-  max-width: 970px;
+  max-width: 1005px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (max-width: 650px){
+  .container{
+    padding: 0 16px;
+  }
 }
 
 .flex-container{
@@ -9,7 +15,8 @@
 }
 
 .btn{
-  padding: 13px 45px;
+  letter-spacing: 0.5px;
+  padding: 10px 42px;
   font-size: 18px;
   background-color: transparent;
 
@@ -27,11 +34,11 @@
 }
 
 .form-control{
-  padding: 13px 25px;
+  padding: 10px 25px;
   background-color: transparent;
   border:1px solid #cccccc;
   font-size: 15px;
-  letter-spacing:0.4px;
+  letter-spacing:0.8px;
   line-height:24px;
   text-align:right;
   color:#848484;
