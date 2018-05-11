@@ -317,82 +317,85 @@ label {
         margin-left: 0; }
     .footer.ltr .footer-small-links {
       text-align: left; } }
-  .footer .copyright {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    margin-top: 36px;
-    border-top: 1px solid #dadada;
-    padding-top: 15px; }
-    .footer .copyright a {
-      display: inline-block; }
-    .footer .copyright .soc-btn.mobile {
-      display: none; }
-    .footer .copyright .copyright-logo {
-      display: block; }
-      .footer .copyright .copyright-logo a {
-        background-image: url(../img/sprite.png);
-        background-position: 0px 0px;
-        width: 118px;
-        height: 40px; }
-    .footer .copyright .copyright-cards {
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-left: 50px; }
-      .footer .copyright .copyright-cards a + a {
-        margin-left: 5px; }
-      .footer .copyright .copyright-cards .bitc {
-        background-image: url(../img/sprite.png);
-        background-position: -87px -75px;
-        width: 28px;
-        height: 20px; }
-      .footer .copyright .copyright-cards .amex {
-        background-image: url(../img/sprite.png);
-        background-position: -59px -75px;
-        width: 28px;
-        height: 20px; }
-      .footer .copyright .copyright-cards .visa {
-        background-image: url(../img/sprite.png);
-        background-position: -96px -95px;
-        width: 30px;
-        height: 22px; }
-      .footer .copyright .copyright-cards .isracard {
-        background-image: url(../img/sprite.png);
-        background-position: -118px -70px;
-        width: 30px;
-        height: 22px; }
-      .footer .copyright .copyright-cards .master {
-        background-image: url(../img/sprite.png);
-        background-position: -59px -75px;
-        width: 28px;
-        height: 20px; }
-    .footer .copyright .copyright-text {
-      margin-left: auto;
-      text-align: right; }
-  .footer.ltr .copyright .copyright-text {
-    margin-right: auto; }
-  .footer.ltr .copyright .copyright-logo {
+  .footer .footer-bottom {
+    margin-top: 35px;
+    border-top: 1px solid #dadada; }
+    .footer .footer-bottom .copyright {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      padding-top: 15px; }
+      .footer .footer-bottom .copyright a {
+        display: inline-block; }
+      .footer .footer-bottom .copyright .soc-btn.mobile {
+        display: none; }
+      .footer .footer-bottom .copyright .copyright-logo {
+        display: block; }
+        .footer .footer-bottom .copyright .copyright-logo a {
+          background-image: url(../img/sprite.png);
+          background-position: 0px 0px;
+          width: 118px;
+          height: 40px; }
+      .footer .footer-bottom .copyright .copyright-cards {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-left: 50px; }
+        .footer .footer-bottom .copyright .copyright-cards a + a {
+          margin-left: 5px; }
+        .footer .footer-bottom .copyright .copyright-cards .bitc {
+          background-image: url(../img/sprite.png);
+          background-position: -87px -75px;
+          width: 28px;
+          height: 20px; }
+        .footer .footer-bottom .copyright .copyright-cards .amex {
+          background-image: url(../img/sprite.png);
+          background-position: -59px -75px;
+          width: 28px;
+          height: 20px; }
+        .footer .footer-bottom .copyright .copyright-cards .visa {
+          background-image: url(../img/sprite.png);
+          background-position: -96px -95px;
+          width: 30px;
+          height: 22px; }
+        .footer .footer-bottom .copyright .copyright-cards .isracard {
+          background-image: url(../img/sprite.png);
+          background-position: -118px -70px;
+          width: 30px;
+          height: 22px; }
+        .footer .footer-bottom .copyright .copyright-cards .master {
+          background-image: url(../img/sprite.png);
+          background-position: -59px -75px;
+          width: 28px;
+          height: 20px; }
+      .footer .footer-bottom .copyright .copyright-text {
+        margin-left: auto;
+        text-align: right; }
+  .footer.ltr .footer-bottom .copyright .copyright-text {
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left; }
+  .footer.ltr .footer-bottom .copyright .copyright-logo {
     margin-left: 50px; }
   @media (max-width: 800px) {
-    .footer .copyright,
-    .footer.ltr .copyright {
+    .footer .footer-bottom .copyright,
+    .footer.ltr .footer-bottom .copyright {
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      .footer .copyright .soc-btn.mobile,
-      .footer.ltr .copyright .soc-btn.mobile {
+      .footer .footer-bottom .copyright .soc-btn.mobile,
+      .footer.ltr .footer-bottom .copyright .soc-btn.mobile {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
-      .footer .copyright .copyright-logo,
-      .footer.ltr .copyright .copyright-logo {
+      .footer .footer-bottom .copyright .copyright-logo,
+      .footer.ltr .footer-bottom .copyright .copyright-logo {
         display: none; }
-      .footer .copyright .copyright-text,
-      .footer.ltr .copyright .copyright-text {
+      .footer .footer-bottom .copyright .copyright-text,
+      .footer.ltr .footer-bottom .copyright .copyright-text {
         width: 100%;
         margin-top: 20px;
         -webkit-box-ordinal-group: 4;
@@ -412,19 +415,23 @@ label {
               order: 1;
       margin-left: 0; } }
   @media (max-width: 650px) {
-    .footer .copyright {
+    .footer .footer-bottom {
       margin-top: 0;
       border-top: none; }
-      .footer .copyright .copyright-text {
+      .footer .footer-bottom .copyright .copyright-text {
         font-size: 10px; }
-      .footer .copyright .soc-btn.mobile {
+      .footer .footer-bottom .copyright .soc-btn.mobile {
         margin-left: -2px; }
-      .footer .copyright .copyright-cards {
+      .footer .footer-bottom .copyright .copyright-cards {
         margin-left: auto;
         margin-right: -3px; }
-        .footer .copyright .copyright-cards a + a {
+        .footer .footer-bottom .copyright .copyright-cards a + a {
           margin-left: 4px; }
     .footer.ltr .copyright .soc-btn.mobile {
       margin-right: -2px; }
     .footer.ltr .copyright .copyright-cards {
       margin-left: -2px; } }
+
+@media (max-width: 800px) {
+  .footer {
+    padding-top: 30px; } }

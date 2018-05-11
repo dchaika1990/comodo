@@ -257,100 +257,106 @@
     }
   }
 
-  .copyright{
-    flex-wrap: wrap;
-    margin-top: 36px;
+  .footer-bottom{
+    margin-top: 35px;
     border-top: 1px solid #dadada;
-    padding-top: 15px;
-    //padding-bottom: 20px;
 
-    a{
-      display: inline-block;
-    }
-
-    .soc-btn.mobile{
-      display: none;
-    }
-
-    .copyright-logo{
-      display: block;
+    .copyright{
+      flex-wrap: wrap;
+      padding-top: 15px;
 
       a{
-        background-image: url(../img/sprite.png);
-        background-position: 0px 0px;
-        width: 118px;
-        height: 40px;
+        display: inline-block;
       }
+
+      .soc-btn.mobile{
+        display: none;
+      }
+
+      .copyright-logo{
+        display: block;
+
+        a{
+          background-image: url(../img/sprite.png);
+          background-position: 0px 0px;
+          width: 118px;
+          height: 40px;
+        }
+      }
+
+      .copyright-cards{
+        align-items: center;
+        margin-left: 50px;
+
+        a + a{
+          margin-left: 5px;
+        }
+
+        .bitc{
+          background-image: url(../img/sprite.png);
+          background-position: -87px -75px;
+          width: 28px;
+          height: 20px;
+        }
+
+        .amex{
+          background-image: url(../img/sprite.png);
+          background-position: -59px -75px;
+          width: 28px;
+          height: 20px;
+        }
+
+        .visa{
+          background-image: url(../img/sprite.png);
+          background-position: -96px -95px;
+          width: 30px;
+          height: 22px;
+        }
+
+        .isracard{
+          background-image: url(../img/sprite.png);
+          background-position: -118px -70px;
+          width: 30px;
+          height: 22px;
+        }
+
+        .master{
+          background-image: url(../img/sprite.png);
+          background-position: -59px -75px;
+          width: 28px;
+          height: 20px;
+        }
+      }
+
+      .copyright-text{
+        margin-left: auto;
+        text-align: right;
+      }
+
+
+
     }
-
-    .copyright-cards{
-      align-items: center;
-      margin-left: 50px;
-
-      a + a{
-        margin-left: 5px;
-      }
-
-      .bitc{
-        background-image: url(../img/sprite.png);
-        background-position: -87px -75px;
-        width: 28px;
-        height: 20px;
-      }
-
-      .amex{
-        background-image: url(../img/sprite.png);
-        background-position: -59px -75px;
-        width: 28px;
-        height: 20px;
-      }
-
-      .visa{
-        background-image: url(../img/sprite.png);
-        background-position: -96px -95px;
-        width: 30px;
-        height: 22px;
-      }
-
-      .isracard{
-        background-image: url(../img/sprite.png);
-        background-position: -118px -70px;
-        width: 30px;
-        height: 22px;
-      }
-
-      .master{
-        background-image: url(../img/sprite.png);
-        background-position: -59px -75px;
-        width: 28px;
-        height: 20px;
-      }
-    }
-
-    .copyright-text{
-      margin-left: auto;
-      text-align: right;
-    }
-
-
-
   }
 
-  &.ltr .copyright{
-    .copyright-text{
-      margin-right: auto;
-    }
+  &.ltr{
+    .footer-bottom{
+      .copyright{
+        .copyright-text{
+          margin-right: auto;
+          margin-left: 0;
+          text-align: left;
+        }
 
-    .copyright-logo{
-      margin-left: 50px;
+        .copyright-logo{
+          margin-left: 50px;
+        }
+      }
     }
   }
-
-
 
   @media (max-width: 800px){
-    & .copyright,
-    &.ltr .copyright{
+    & .footer-bottom .copyright,
+    &.ltr .footer-bottom .copyright{
       justify-content: space-between;
 
       .soc-btn.mobile{
@@ -382,26 +388,29 @@
   }
 
   @media (max-width: 650px) {
-    & .copyright{
+    & .footer-bottom{
       margin-top: 0;
       border-top: none;
 
-      .copyright-text{
-        font-size: 10px;
-      }
+      & .copyright{
+        .copyright-text{
+          font-size: 10px;
+        }
 
-      .soc-btn.mobile{
-        margin-left: -2px;
-      }
+        .soc-btn.mobile{
+          margin-left: -2px;
+        }
 
-      .copyright-cards{
-        margin-left: auto;
-        margin-right: -3px;
+        .copyright-cards{
+          margin-left: auto;
+          margin-right: -3px;
 
-        a + a{
-          margin-left: 4px;
+          a + a{
+            margin-left: 4px;
+          }
         }
       }
+
     }
 
     &.ltr .copyright{
@@ -413,5 +422,11 @@
         margin-left: -2px;
       }
     }
+  }
+}
+
+@media (max-width: 800px){
+  .footer{
+    padding-top: 30px;
   }
 }
